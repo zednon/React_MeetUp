@@ -29,13 +29,16 @@ getMeetUpNext = () => {
     return (
       <div className="App">
 <div className="WelcomeBody">
+<div className="uk-container">
+<img src={tgtsnbn} id="logo" alt="NYC harry potter logo"/>
+
 <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
 
-<nav className="uk-navbar-container">
+<nav className="uk-navbar-container" id="header">
 <div className="uk-container uk-container-expand">
 <div uk-navbar>
  
-    <ul className="uk-navbar-nav">
+    <ul className="uk-navbar-nav" >
     <li className="uk-active"><a href="https://www.meetup.com/TGTSNBN">To Join</a></li>
     <li>
         <a href="#">Contact Us</a>
@@ -53,8 +56,8 @@ getMeetUpNext = () => {
         <a href="#">Contact Forms</a>
         <div className="uk-navbar-dropdown">
         <ul className="uk-nav uk-navbar-dropdown-nav">
-        <li className="uk-active"><a href="#">Forms</a></li>
-        <li><a href="#">Ask us to join you at an event</a></li>
+        <li className="uk-active" color="yellow">Forms</li>
+        <li><a href="formcontact.html">Ask us to join you at an event</a></li>
         <li><a href="#">Volunteer form</a></li>
         <li><a href="#">Suggestion form</a></li>
      
@@ -70,8 +73,6 @@ getMeetUpNext = () => {
 </div>
 </nav>
 </div>
-<img src={tgtsnbn} id="logo" alt="NYC harry potter logo"/>
-
 
 
 <div><h1>Welcome the The Group That Shall Not Be Named!</h1></div>
@@ -84,7 +85,7 @@ getMeetUpNext = () => {
                 </div>
 
 </div>
-
+</div>
     );
   }
 }
