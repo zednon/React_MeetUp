@@ -1,0 +1,25 @@
+.header {
+    background: #555;
+    color: #f1f1f1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+.headerstuff {
+margin: 0 0 0 20px;
+}
+
+li a:hover {
+    background-color: #111;
+  }
+
+  .buttonUpdate {
+      background-color: red;
+      
+  }
