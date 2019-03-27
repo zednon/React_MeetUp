@@ -2,16 +2,14 @@ import React, { Component } from 'react';
 import './App.css'
 import tgtsnbn from './images/tgtsnbn.jpg';
 import { log } from 'util';
-
+import App from './components/App';
 
 
 class App extends Component {
   
-getMeetUpNext = () => {
+getMeetUpNext = () => {    
 
-    
-
-        var queryURL ="https://api.meetup.com/2/events?key=711b1c41327ea3e2f1d2044b454361&group_urlname=TGTSNBN" ;
+    var queryURL ="https://api.meetup.com/2/events?key=711b1c41327ea3e2f1d2044b454361&group_urlname=TGTSNBN" ;
       
     var key = "711b1c41327ea3e2f1d2044b454361"
     
@@ -20,8 +18,6 @@ getMeetUpNext = () => {
     }).then(function(data){
       console.log(data);
     });
-
- 
 }
   
   
@@ -66,7 +62,7 @@ getMeetUpNext = () => {
     </li>
     <li className="uk-active"><a href="#">News</a></li>
     <li className="uk-active"><a href="3">Gallery</a></li>
-    <li className="uk-active"><a href="#">Staff Login</a></li>
+    <li className="uk-active"><a href="database/staff.html">Staff Login</a></li>
     
 </ul>
 </div> 
@@ -78,7 +74,7 @@ getMeetUpNext = () => {
 <div><h1>Welcome the The Group That Shall Not Be Named!</h1></div>
 <div><p> We are HP-NYC, "The Group That Shall Not be Named". And Harry Potter isn't over till we say its over. We are the largest HP fan club in the world with over 2000 members. Our members span every type of person possible but we are united in our love of these books. We meet regularly on the 1st Thursday of every month and have special events almost every month. If you are looking for a way to meet new friends and forge new relationships in this huge city of ours, then you've come to the right place. We have a wide range of events and activities that are as diverse as the interests of our members. We strive to provide an experience that allows you to indulge in your talents and creativity while having a tremendously fun time.</p></div>
 <div><h2>Meet up info</h2></div>
-<div><button onClick={this.getMeetUpNext} className="bottonUpdate" id="upcoming">To see our Next Meet Up click me!</button></div>
+<div><button onClick={this.getMeetUpNext} className="bottomUpdate" id="upcoming">To see our Next Meet Up click me!</button></div>
 <div>
 <p>Follow the Link in the below to attented the next evenet.</p>
                 <a href="https://www.meetup.com/TGTSNBN/">Meetup</a></div>
