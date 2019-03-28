@@ -1,6 +1,6 @@
 var express = require("express")
 
-var port = process.env.PORT || 3002 
+var port = process.env.PORT 
 // var db = require("./models") 
 // app.use(express.static("./client/build"))
 // var path = require("path")
