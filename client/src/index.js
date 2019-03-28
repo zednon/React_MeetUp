@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App.jsx';
 import * as serviceWorker from './serviceWorker';
+// import { BrowserRouter as Router } from 'react-router-dom';
+
+// import Navigation from '../Navigation';
+
+// const App = () => (
+//   <Router>
+//     <Navigation />
+//   </Router>
+// );
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -10,3 +20,4 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
+export default App;

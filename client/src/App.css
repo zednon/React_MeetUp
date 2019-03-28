@@ -10,3 +10,16 @@ background-color: red;
 #formbody {
   background-color: black;
 }
+
+#loginbox {
+border: red solid 3px;
+padding: 20px 20px 20px 52px;
+margin: 20px 708px 20px 75px;
+background-color: white;
+}
+
+#log {
+  background-color: black;
+
+}
+

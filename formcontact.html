@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="App.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="client/src/App.css">
   <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
 
@@ -23,6 +23,7 @@
     <div uk-navbar>
      
         <ul class="uk-navbar-nav" >
+                <li class="uk-active"><a href="#">Welcome Page</a></li>
         <li class="uk-active"><a href="https://www.meetup.com/TGTSNBN">To Join</a></li>
         <li>
             <a href="#">Contact Us</a>
@@ -50,8 +51,9 @@
         </li>
         <li class="uk-active"><a href="#">News</a></li>
         <li class="uk-active"><a href="3">Gallery</a></li>
+  
         <li class="uk-active"><a href="#">Staff Login</a></li>
-        
+ 
     </ul>
     </div> 
     </div>
@@ -65,31 +67,31 @@
                 <legend class="uk-legend">Group That Shall Not Be Named Event Contact Form</legend>
         
 <div class="uk-margin">
-    <input class="uk-input" type="text" placeholder="Name of Company">
+    <input id="Name_Of_Company" class="uk-input" type="text" placeholder="Name of Company">
     <br><br>
-    <input class="uk-input" type="text" placeholder="Loction">
+    <input id="Loction" class="uk-input" type="text" placeholder="Loction">
     <br><br>
-    <input class="uk-input" type="text" placeholder="Phone Number">
+    <input id="Phone_Number" class="uk-input" type="text" placeholder="Phone Number">
     <br><br>
-    <input class="uk-input" type="text" placeholder="email Address">    
+    <input id="email_Address" class="uk-input" type="text" placeholder="email Address">    
     <br><br>
-    <input class="uk-input" type="text" placeholder="website">    
+    <input id="website" class="uk-input" type="text" placeholder="website">    
 <div class="uk-margin">
         <br><br>
 <h3>Are you Local to NYC</h3>
-
+<!-- 
 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
         <label><input class="uk-radio" type="radio" name="radio2" checked> Yes</label>
         <label><input class="uk-radio" type="radio" name="radio2"> No</label>
     </div>
-    
+     -->
 
 </div>
 
 </div>
 
 <div class="uk-margin">
-    <textarea class="uk-textarea" rows="5" placeholder="Textarea">Discription of the event</textarea>
+    <textarea id="Discription_of_the_event" class="uk-textarea" rows="5" placeholder="Textarea">Discription of the event</textarea>
 </div>
 
 <select class="uk-select">
@@ -102,13 +104,25 @@
         <option>10000+</option>
         </select>
         <br><br>
-        <button class="uk-button uk-button-primary">Submit</button>
-        <button class="uk-button uk-button-secondary">Clear Form</button>
-
+        <button id="make-new" class="uk-button uk-button-primary">Submit</button>
+        <button id="clear" class="uk-button uk-button-secondary">Clear Form</button>
+        <div id="results"></div>
             </fieldset>
         </form>
+       </div>
+    </div>
+<script>
+// Retrieve
+var MongoClient = require('contactDB').MongoClient;
 
-    </div>
-    </div>
+// Connect to the db
+MongoClient.connect("mongodb://localhost:27017/contactDB", function(err, db) {
+  if(!err) {
+    console.log("We are connected");
+  }
+});
+
+</script>
+ <script src="database/app.js"></script>
 </body>
 </html>
