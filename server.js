@@ -73,6 +73,6 @@ app.get("/name_of_company", function(req, res) {
 // 4. At the "/weight" path, display every entry in the animals collection, sorted by weight
 
 // Set the app to listen on port 3000
-app.listen(3002, function() {
+app.listen(port, function() {
   console.log("App running on port 3002!");
 });
