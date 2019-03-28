@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="App.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="client/src/App.css">
   <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
 
@@ -79,12 +79,12 @@
 <div class="uk-margin">
         <br><br>
 <h3>Are you Local to NYC</h3>
-
+<!-- 
 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
         <label><input class="uk-radio" type="radio" name="radio2" checked> Yes</label>
         <label><input class="uk-radio" type="radio" name="radio2"> No</label>
     </div>
-    
+     -->
 
 </div>
 
@@ -104,9 +104,9 @@
         <option>10000+</option>
         </select>
         <br><br>
-        <button class="uk-button uk-button-primary">Submit</button>
-        <button class="uk-button uk-button-secondary">Clear Form</button>
-  
+        <button id="make-new" class="uk-button uk-button-primary">Submit</button>
+        <button id="clear" class="uk-button uk-button-secondary">Clear Form</button>
+        <div id="results"></div>
             </fieldset>
         </form>
        </div>
@@ -123,6 +123,6 @@ MongoClient.connect("mongodb://localhost:27017/contactDB", function(err, db) {
 });
 
 </script>
- <script src="app.js"></script>
+ <script src="database/app.js"></script>
 </body>
 </html>

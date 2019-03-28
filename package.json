@@ -17,10 +17,11 @@
   "bugs": {
     "url": "https://github.com/zednon/React_MeetUp/issues"
   },
-  "homepage": "https://vast-mountain-93838.herokuapp.com/",
+ 
   "dependencies": {
     "express": "^4.16.4",
     "firebase": "^5.9.0",
+    "heroku": "^7.22.7",
     "mongo": "^0.1.0",
     "mongojs": "^2.6.0",
     "mysql2": "^1.6.5",
@@ -29,5 +30,3 @@
     "sql": "^0.78.0"
   }
 }
-
-

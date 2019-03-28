@@ -18,7 +18,7 @@ var mongojs = require("mongojs");
 var app = express();
 
 // Set up a static folder (public) for our web app
-app.use(express.static("public"));
+app.use(express.static("client/build"));
 
 // Database configuration
 // Save the URL of our database as well as the name of our collection
@@ -35,9 +35,9 @@ db.on("error", function(error) {
 
 // Routes
 // 1. At the root path, send a simple hello world message to the browser
-app.get("/", function(req, res) {
-  res.send("Hello world");
-});
+// app.get("/", function(req, res) {
+//   res.send("Hello world");
+// });
 
 // 2. At the "/all" path, display every entry in the animals collection
 app.get("/all", function(req, res) {
@@ -73,6 +73,6 @@ app.get("/name_of_company", function(req, res) {
 // 4. At the "/weight" path, display every entry in the animals collection, sorted by weight
 
 // Set the app to listen on port 3000
-app.listen(3000, function() {
-  console.log("App running on port 3000!");
+app.listen(3002, function() {
+  console.log("App running on port 3002!");
 });
