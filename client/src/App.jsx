@@ -36,20 +36,9 @@ class App extends Component {
 
                     <ul className="uk-navbar-nav" >
                       <li className="uk-active"><a href="https://www.meetup.com/TGTSNBN">To Join</a></li>
+                     
                       <li>
-                        <a href="#">Contact Us</a>
-                        <div className="uk-navbar-dropdown">
-                          <ul className="uk-nav uk-navbar-dropdown-nav">
-                            <li className="uk-active"><a href="#">Get in Contact</a></li>
-
-                            <li><a href="#">facebook</a></li>
-                            <li><a href="mailto:jrosent@gmail.com">Email</a></li>
-                            <li><a href="#">instagram</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="#">Contact Forms</a>
+                        <a href=".">Contact Form</a>
                         <div className="uk-navbar-dropdown">
                           <ul className="uk-nav uk-navbar-dropdown-nav">
                             <li className="uk-active" color="yellow">Forms</li>
@@ -60,8 +49,8 @@ class App extends Component {
                           </ul>
                         </div>
                       </li>
-                      <li className="uk-active"><a href="#">News</a></li>
-                      <li className="uk-active"><a href="3">Gallery</a></li>
+                      <li className="uk-active"><a href="">Up Coming Meet Ups</a></li>
+                      <li className="uk-active"><a href="https://www.flickr.com/groups/tgtsnbn/">Flickr</a></li>
                       <li className="uk-active"><a href="database/staff.html">Staff Login</a></li>
 
                     </ul>

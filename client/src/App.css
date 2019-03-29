@@ -23,3 +23,7 @@ background-color: white;
 
 }
 
+.whitebox {
+  border: 40px solid white;
+  background-color: white; 
+}
